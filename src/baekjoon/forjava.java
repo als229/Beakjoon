@@ -1,5 +1,6 @@
 package baekjoon;
 
+import java.util.Scanner;
 
 
 //1번 정답
@@ -64,26 +65,54 @@ package baekjoon;
 //	}
 //}
 
-import java.util.Scanner;
+//5번 답
+//public class forjava {
+//	
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int num = sc.nextInt();
+//		
+//		for(int i = 1; i <= num; i++) {
+//			System.out.println(i);
+//		}
+//			
+//	}
+//}
 
+
+//6번 답 
+//public class forjava {
+//	
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int num = sc.nextInt();
+//		
+//		for(int i = num; i >0; i--) {
+//			System.out.println(i);
+//		}
+//			
+//	}
+//}
+
+//7번답
 public class forjava {
 	
 	public static void main(String[] args) {
-
-		Scanner scanner = new Scanner(System.in);
-		int sum = 0;
+		Scanner sc = new Scanner(System.in);
 		
-		int a = scanner.nextInt();
+		int a = sc.nextInt();
 		
-		for (int i = 1; i <=a;i++) {
-			
-			sum += i;
+		for(int i = 1; i <= a; i++) {
+			int b = sc.nextInt();
+			int c = sc.nextInt();
 
+			System.out.println("Case #"+i+": "+(b+c));
 		}
-		System.out.println(sum);
-
+		
 	}
 }
+
+
 
 
 
