@@ -95,27 +95,74 @@ import java.util.Scanner;
 //}
 
 //7번답
+//public class forjava {
+//	
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int a = sc.nextInt();
+//		
+//		for(int i = 1; i <= a; i++) {
+//			int b = sc.nextInt();
+//			int c = sc.nextInt();
+//
+//			System.out.println("Case #"+i+": "+(b+c));
+//		}
+//		
+//	}
+//}
+
+//8번 답
+//public class forjava {
+//	
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int a = sc.nextInt();
+//		
+//		for(int i = 1; i <= a; i++) {
+//			int b = sc.nextInt();
+//			int c = sc.nextInt();
+//
+//			System.out.printf("Case #%d: %d + %d = %d%n",i ,b , c, (b+c));
+//		}
+//		
+//	}
+//}
+
+//9번 답
+//public class forjava {
+//
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int a = sc.nextInt();
+//		
+//		for(int i = 1; i <= a; i++) {
+//			for(int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//	}
+//}
+
+//10번 답
 public class forjava {
-	
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		int a = sc.nextInt();
 		
-		for(int i = 1; i <= a; i++) {
-			int b = sc.nextInt();
-			int c = sc.nextInt();
-
-			System.out.println("Case #"+i+": "+(b+c));
+		for(int i = a; i > 0; i--) {
+			for(int j = a; j >= i; j--) {
+				System.out.print("*");
+			}
+			System.out.println();
 		}
-		
 	}
 }
-
-
-
-
-
 
 
 
