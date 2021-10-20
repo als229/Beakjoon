@@ -1,5 +1,6 @@
 package baekjoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -148,28 +149,48 @@ import java.util.Scanner;
 //}
 
 //10번 답
-public class forjava {
+//public class forjava {
+//
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//
+//		int a = sc.nextInt();
+//
+//		for(int i = 1; i <= a; i++) {
+//
+//			for(int j = 0; j < a-i; j++) {
+//				System.out.print(" ");
+//			}
+//			for(int j = 0; j < i; j++) {
+//				System.out.print("*");
+//				
+//			}
+//			System.out.println();
+//		}
+//	}
+//}
 
+//11번 답
+public class forjava{
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 
 		int a = sc.nextInt();
-
-		for(int i = 1; i <= a; i++) {
-
-			for(int j = 0; j < a-i; j++) {
-				System.out.print(" ");
-			}
-			for(int j = 0; j < i; j++) {
-				System.out.print("*");
-				
-			}
-			System.out.println();
+		int b = sc.nextInt();
+		
+		int arr[] = new int[a]; 
+		
+		for(int i = 0 ; i < arr.length ; i++) {
+			arr[i] = sc.nextInt();
 		}
+		for(int j = 0; j < arr.length; j++) {
+			if(arr[j] < b) {
+				System.out.print(arr[j]+" ");
+			}
+		}
+	
 	}
 }
-
-
 
 
 
