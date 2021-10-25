@@ -2,9 +2,6 @@ package baekjoon;
 
 import java.util.Scanner;
 
-public class ArrayPart {
-
-	public static void main(String[] args) {
 		//		Scanner scanner = new Scanner(System.in);
 		//
 		//		int a = scanner.nextInt();
@@ -25,27 +22,55 @@ public class ArrayPart {
 
 
 		//2¹ø ´ä 
-		method1();
 
-	}
-	public static void method1() {
+//public class ArrayPart {
+//
+//	public static void main(String[] args) {
+//		Scanner scanner = new Scanner(System.in);
+//		int[] arr = new int[9];
+//
+//		int max = 1;
+//		int num = 0;
+//
+//		for(int i = 0; i < 9; i++) {
+//			int a = scanner.nextInt();
+//			arr[i] = a;
+//
+//			if(max <= arr[i]) {max = arr[i];
+//			num = i+1;}
+//
+//		}
+//		System.out.println(max);
+//		System.out.println(num);
+//	}
+//}
+public class ArrayPart {
+
+	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int[] arr = new int[9];
-
-		int max = 1;
-		int num = 0;
-
-		for(int i = 0; i < 9; i++) {
-			int a = scanner.nextInt();
-			arr[i] = a;
+		
+		int a = scanner.nextInt();
+		int b = scanner.nextInt();
+		int c = scanner.nextInt();
+		
+		int d = a*b*c;
+		String str = d + "";
+		char sc = str.charAt(0);
+		String result = "";
+		int count = 0;
+		
+		for(int i = 0; i < str.length(); i++) {
+			sc = str.charAt(i);
+			if( sc == '0') {
+				
+				result = 
+			}
 			
-			if(max <= arr[i]) {max = arr[i];
-			num = i;}
-
 		}
-		System.out.println(max);
-		System.out.println(num);
+		
+		
+		
+		
 	}
 }
-
 
