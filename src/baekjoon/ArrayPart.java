@@ -1,27 +1,27 @@
 package baekjoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-		//		Scanner scanner = new Scanner(System.in);
-		//
-		//		int a = scanner.nextInt();
-		//
-		//		int[] arr = new int[a];
-		//
-		//		int max = 1;
-		//		int min = 1000000;
-		//
-		//		for(int i = 0; i <= arr.length-1; i++) {
-		//			arr[i] = scanner.nextInt();
-		//		}
-		//		for(int i = 0; i <= arr.length-1; i++) {
-		//			if(max <= arr[i]) max = arr[i];
-		//			if(min >= arr[i]) min = arr[i];
-		//		}
-		//		System.out.println(min + " " + max);
+//		Scanner scanner = new Scanner(System.in);
+//
+//		int a = scanner.nextInt();
+//
+//		int[] arr = new int[a];
+//
+//		int max = 1;
+//		int min = 1000000;
+//
+//		for(int i = 0; i <= arr.length-1; i++) {
+//			arr[i] = scanner.nextInt();
+//		}
+//		for(int i = 0; i <= arr.length-1; i++) {
+//			if(max <= arr[i]) max = arr[i];
+//			if(min >= arr[i]) min = arr[i];
+//		}
+//		System.out.println(min + " " + max);
 
-
-		//2번 답 
+//2번 답 
 
 //public class ArrayPart {
 //
@@ -48,29 +48,27 @@ public class ArrayPart {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		int numCount = 0;
 		
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
 		int c = scanner.nextInt();
-		
-		int d = a*b*c;
+
+		int d = a * b * c;
 		String str = d + "";
-		char sc = str.charAt(0);
-		String result = "";
-		int count = 0;
-		
-		for(int i = 0; i < str.length(); i++) {
-			sc = str.charAt(i);
-			if( sc == '0') {
-				
-				result = 
-			}
-			
+		char[] sc = new char[str.length()];
+		for (int i = 0; i < str.length(); i++) {
+			sc[i] = str.charAt(i);
 		}
-		
-		
-		
+		System.out.println(Arrays.toString(sc));
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0 ; j < str.length() ; j++) {
+				if((int)sc[j] == 48+i ) {
+					numCount++;
+				}
+			}
+			System.out.println(numCount);	
+		}
 		
 	}
 }
-
