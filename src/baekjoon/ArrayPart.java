@@ -44,20 +44,13 @@ import java.util.Scanner;
 //		System.out.println(num);
 //	}
 //}
+
+// 실패한 답 
 //public class ArrayPart {
 //
 //	public static void main(String[] args) {
 //		Scanner scanner = new Scanner(System.in);
-//		int Count0 = 0;
-//		int Count1 = 0;
-//		int Count2 = 0;
-//		int Count3 = 0;
-//		int Count4 = 0;
-//		int Count5 = 0;
-//		int Count6 = 0;
-//		int Count7 = 0;
-//		int Count8 = 0;
-//		int Count9 = 0;
+
 //		
 //		int a = scanner.nextInt();
 //		int b = scanner.nextInt();
@@ -83,25 +76,46 @@ import java.util.Scanner;
 //}
 
 
+// 3번 답
+//public class ArrayPart {
+//
+//	public static void main(String[] args) {
+//		Scanner in = new Scanner(System.in);
+//		 
+//		int value = (in.nextInt() * in.nextInt() * in.nextInt());
+//		String str = Integer.toString(value);
+//		in.close();
+//		
+//		for (int i = 0; i < 10; i++) {
+//			int count = 0;
+//			for (int j = 0; j < str.length(); j++) {
+//				if ((str.charAt(j) - '0') == i) {
+//					count++;
+//				}
+//			}
+//			System.out.println(count);
+//		}
+//		
+//	}
+//}
+
 
 public class ArrayPart {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		 
-		int value = (in.nextInt() * in.nextInt() * in.nextInt());
-		String str = Integer.toString(value);
-		in.close();
+
+		Scanner sc = new Scanner(System.in);
 		
-		for (int i = 0; i < 10; i++) {
-			int count = 0;
-			for (int j = 0; j < str.length(); j++) {
-				if ((str.charAt(j) - '0') == i) {
-					count++;
-				}
-			}
-			System.out.println(count);
-		}
-		
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+		int num4 = sc.nextInt();
+		int num5 = sc.nextInt();
+		int num6 = sc.nextInt();
+		int num7 = sc.nextInt();
+		int num8 = sc.nextInt();
+		int num9 = sc.nextInt();
+		int num10 = sc.nextInt();
 	}
 }
+
