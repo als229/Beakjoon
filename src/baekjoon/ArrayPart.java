@@ -75,7 +75,6 @@ import java.util.Scanner;
 //	}
 //}
 
-
 // 3¹ø ´ä
 //public class ArrayPart {
 //
@@ -99,23 +98,36 @@ import java.util.Scanner;
 //	}
 //}
 
-
 public class ArrayPart {
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[10];
+		int[] arr2 = new int[10];
+		int count = 0;
 		
-		int num1 = sc.nextInt();
-		int num2 = sc.nextInt();
-		int num3 = sc.nextInt();
-		int num4 = sc.nextInt();
-		int num5 = sc.nextInt();
-		int num6 = sc.nextInt();
-		int num7 = sc.nextInt();
-		int num8 = sc.nextInt();
-		int num9 = sc.nextInt();
-		int num10 = sc.nextInt();
+		for (int i = 0; i < 10; i++) {
+			int a = sc.nextInt();
+			arr[i] = a;
+		}
+		
+		for (int i = 0; i < arr.length; i++) {
+			arr2[i] = arr[i] % 42;
+		}
+		for (int i = 0; i < arr2.length; i++) {
+			boolean bl = false;
+			for (int j = i+1; j < arr.length; j++) {
+				if (arr2[i] == arr2[j]) {
+					bl = true;
+					break;
+				}
+			}
+			if(bl == false) {
+				count++;
+			}
+		}
+		System.out.println(count);
+
 	}
 }
-
