@@ -98,36 +98,71 @@ import java.util.Scanner;
 //	}
 //}
 
+// 4번 답
+//public class ArrayPart {
+//
+//	public static void main(String[] args) {
+//
+//		Scanner sc = new Scanner(System.in);
+//		int[] arr = new int[10];
+//		int[] arr2 = new int[10];
+//		int count = 0;
+//		
+//		for (int i = 0; i < 10; i++) {
+//			int a = sc.nextInt();
+//			arr[i] = a;
+//		}
+//		
+//		for (int i = 0; i < arr.length; i++) {
+//			arr2[i] = arr[i] % 42;
+//		}
+//		for (int i = 0; i < arr2.length; i++) {
+//			boolean bl = false;
+//			for (int j = i+1; j < arr.length; j++) {
+//				if (arr2[i] == arr2[j]) {
+//					bl = true;
+//					break;
+//				}
+//			}
+//			if(bl == false) {
+//				count++;
+//			}
+//		}
+//		System.out.println(count);
+//
+//	}
+//}
+
+
+// 5번답 
 public class ArrayPart {
 
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
-		int[] arr = new int[10];
-		int[] arr2 = new int[10];
-		int count = 0;
+		int a = sc.nextInt();
+		int max = 0;
+		int avg = 0;
+		int sum = 0;
 		
-		for (int i = 0; i < 10; i++) {
-			int a = sc.nextInt();
-			arr[i] = a;
-		}
+		int[] arr = new int[a];
+		int[] arr2 = new int[a];
 		
-		for (int i = 0; i < arr.length; i++) {
-			arr2[i] = arr[i] % 42;
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = sc.nextInt();
 		}
-		for (int i = 0; i < arr2.length; i++) {
-			boolean bl = false;
-			for (int j = i+1; j < arr.length; j++) {
-				if (arr2[i] == arr2[j]) {
-					bl = true;
-					break;
-				}
-			}
-			if(bl == false) {
-				count++;
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] > max) {
+				max = arr[i];
 			}
 		}
-		System.out.println(count);
-
+		for(int i =0 ; i < a; i++) {
+			arr2[i] = arr[i]/max*100;
+		}
+		for(int i = 0; i < a ; i++) {
+			sum += arr2[i];
+		}
+		avg = sum/a;
+		System.out.println(avg);
+		
 	}
 }
