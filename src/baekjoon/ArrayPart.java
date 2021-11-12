@@ -140,12 +140,12 @@ public class ArrayPart {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
-		int max = 0;
-		int avg = 0;
-		int sum = 0;
+		double max = 0;
+		double avg = 0;
+		double sum = 0;
 		
-		int[] arr = new int[a];
-		int[] arr2 = new int[a];
+		double[] arr = new double[a];
+		double[] arr2 = new double[a];
 		
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
@@ -161,6 +161,9 @@ public class ArrayPart {
 		for(int i = 0; i < a ; i++) {
 			sum += arr2[i];
 		}
+		System.out.println(max + "  max");
+		System.out.println(Arrays.toString(arr2)+  "   arr2");
+		System.out.println(sum + "    sum");
 		avg = sum/a;
 		System.out.println(avg);
 		
